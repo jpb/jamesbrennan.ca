@@ -1,0 +1,90 @@
+header h1, .sections {
+	-webkit-background-clip: text;
+	   -moz-background-clip: text;
+	        background-clip: text;
+	-webkit-text-fill-color: transparent;
+	   -moz-text-fill-color: transparent;
+	        text-fill-color: transparent;
+}
+header {
+	h1 {
+		font-size: 56px;
+		width: 370px;
+		/*background-image: -ms-radial-gradient(left top, circle farthest-corner, #FF5959 0%, #9EEFE4 100%);*/
+		/*background-image: -moz-radial-gradient(left top, circle farthest-corner, #FF5959 0%, #9EEFE4 100%);*/
+		/*background-image: -o-radial-gradient(left top, circle farthest-corner, #FF5959 0%, #9EEFE4 100%);*/
+		/*background-image: -webkit-gradient(radial, left top, 0, left top, 994, color-stop(0, #FF5959), color-stop(1, #9EEFE4));*/
+		background-image: -webkit-radial-gradient(left top, circle farthest-corner, #FF5959 0%, #9EEFE4 100%);
+		/*background-image: radial-gradient(circle farthest-corner at left top, #FF5959 0%, #9EEFE4 100%);*/
+	}
+}
+.sections {
+	/*background-image: -ms-linear-gradient(top, #FF5959 0%, #9EEFE4 100%);*/
+	/*background-image: -moz-linear-gradient(top, #FF5959 0%, #9EEFE4 100%);*/
+	/*background-image: -o-linear-gradient(top, #FF5959 0%, #9EEFE4 100%);*/
+	/*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF5959), color-stop(1, #9EEFE4));*/
+	background-image: -webkit-linear-gradient(top, #FF5959 0%, #9EEFE4 100%);
+	/*background-image: linear-gradient(to bottom, #FF5959 0%, #9EEFE4 100%);*/
+
+	section {
+		margin-bottom: 40px;		
+	}
+}
+@media (min-width: 992px) {
+	.sections {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 991px) {
+	.sections {
+		margin-top: -20px;
+	}
+}
+.links {
+	text-align: center;
+}
+.facebook.link {
+	&:hover {
+		background-position: -16px 0;
+	}
+}
+.twitter.link {
+	background-position: 0 -16px;
+	&:hover {
+		background-position: -16px -16px;
+	}
+}
+.github.link {
+	background-position: 0 -32px;
+	&:hover {
+		background-position: -16px -32px;
+	}
+}
+.mail.link {
+	background-position: 0 -48px;
+	&:hover {
+		background-position: -16px -48px;
+	}
+}
+.project.link {
+	background-position: 0 -64px;
+	margin: 0 0 5px 0;
+
+	&:hover {
+		background-position: -16px -64px;
+	}
+
+}
+.cv.link {
+	background-position: 0 -80px;
+	&:hover {
+		background-position: -16px -80px;
+	}
+}
+.link {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 15px;
+	background: url('../img/links.png') no-repeat;
+}
