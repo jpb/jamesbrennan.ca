@@ -1,6 +1,6 @@
 
 css:
-	lessc --compress assets/less/jamesbrennan.less > _lib/css/main.min.css
+	lessc --compress assets/less/jamesbrennan.less > assets/css/main.min.css
 
 js:
 	cat js/jquery-1.8.3.min.js \
